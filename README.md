@@ -1,2 +1,8 @@
-# Android-Review
-Android知识体系
+> 本项目用来记录 Android 的一些知识体系，用于复习或巩固知识，支持更新..
+
+# Android 基础
+该系列需要基本掌握，且能较为清晰
+
+## Android 四大组件
+
+
