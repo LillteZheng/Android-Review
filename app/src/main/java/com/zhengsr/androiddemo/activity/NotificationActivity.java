@@ -1,6 +1,5 @@
 package com.zhengsr.androiddemo.activity;
 
-import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 
@@ -9,8 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.BitmapFactory;
-import android.media.session.MediaSession;
-import android.opengl.Visibility;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.NotificationCompat;
@@ -19,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.RemoteViews;
 
 import com.zhengsr.androiddemo.R;
 
@@ -52,7 +50,7 @@ public class NotificationActivity extends AppCompatActivity {
 
 
 
-        mBuilder = new NotificationCompat.Builder(this)
+       /* mBuilder = new NotificationCompat.Builder(this)
                 .setContentTitle("紧急通知")
                 .setContentText("这是一条紧急通知")
                 .setWhen(System.currentTimeMillis())
@@ -72,12 +70,34 @@ public class NotificationActivity extends AppCompatActivity {
                // .setProgress(100,50,false)
 
 
-         ;
+         ;*/
+
+       cusNotification();
 
     }
 
 
-    private NotificationCompat.Action getRemoveAction(){
+    /**
+     * 自定义通知栏
+     */
+    private void cusNotification(){
+
+        RemoteViews cusRemoveView = new RemoteViews(getPackageName(),R.layout.cus_notify_small);
+        RemoteViews cusRemoveExpandView = new RemoteViews(getPackageName(),R.layout.cus_notify_large);
+
+        mBuilder = new NotificationCompat.Builder(this)
+                .setWhen(System.currentTimeMillis())
+                .setSmallIcon(R.mipmap.ic_launcher)
+            //    .setStyle(new NotificationCompat.DecoratedCustomViewStyle())
+                .setCustomContentView(cusRemoveView)
+                .setCustomBigContentView(cusRemoveExpandView);
+
+
+
+
+    }
+
+   private NotificationCompat.Action getRemoveAction(){
         //添加一个回复组件，
 
         RemoteInput remoteInput = new RemoteInput.Builder(REPLY_KEY)
