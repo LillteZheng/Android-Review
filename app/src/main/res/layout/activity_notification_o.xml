@@ -5,27 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.notify.NotificationActivity">
+    tools:context=".activity.notify.NotificationOActivity">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="通知"
-        android:onClick="notify"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="更新"
-        android:onClick="update"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="取消"
-        android:onClick="cancel"
-        />
+        android:onClick="notify"/>
 
 </LinearLayout>

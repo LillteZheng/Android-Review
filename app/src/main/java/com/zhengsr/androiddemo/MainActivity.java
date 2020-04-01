@@ -3,13 +3,12 @@ package com.zhengsr.androiddemo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
 
-import com.zhengsr.androiddemo.activity.NotificationActivity;
+import com.zhengsr.androiddemo.activity.notify.NotificationActivity;
+import com.zhengsr.androiddemo.activity.notify.NotificationOActivity;
 import com.zhengsr.androiddemo.adapter.LGAdapter;
 import com.zhengsr.androiddemo.adapter.LGViewHolder;
 
@@ -27,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         datas.add(new DemoBean("通知栏", NotificationActivity.class));
+        datas.add(new DemoBean("通知栏8.0", NotificationOActivity.class));
 
 
         listview.setAdapter(new LGAdapter<DemoBean>(datas,R.layout.demo_layout) {

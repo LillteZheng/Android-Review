@@ -1,4 +1,4 @@
-package com.zhengsr.androiddemo.activity;
+package com.zhengsr.androiddemo.activity.notify;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -19,6 +19,7 @@ import android.view.View;
 import android.widget.RemoteViews;
 
 import com.zhengsr.androiddemo.R;
+import com.zhengsr.androiddemo.activity.SecondActivity;
 
 public class NotificationActivity extends AppCompatActivity {
     private static final String TAG = "NotificationActivity";
@@ -50,11 +51,12 @@ public class NotificationActivity extends AppCompatActivity {
 
 
 
-       /* mBuilder = new NotificationCompat.Builder(this)
+        mBuilder = new NotificationCompat.Builder(this)
                 .setContentTitle("紧急通知")
                 .setContentText("这是一条紧急通知")
                 .setWhen(System.currentTimeMillis())
-                .setSmallIcon(R.mipmap.ic_launcher)
+                .setSmallIcon(R.mipmap.test)
+                .setColor(getResources().getColor(R.color.colorPrimary))
                 .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
                 //.setDefaults(NotificationCompat.DEFAULT_SOUND)
                 //.setDefaults(NotificationCompat.DEFAULT_VIBRATE)
@@ -70,9 +72,8 @@ public class NotificationActivity extends AppCompatActivity {
                // .setProgress(100,50,false)
 
 
-         ;*/
-
-       cusNotification();
+         ;
+       //cusNotification();
 
     }
 
@@ -88,7 +89,7 @@ public class NotificationActivity extends AppCompatActivity {
         mBuilder = new NotificationCompat.Builder(this)
                 .setWhen(System.currentTimeMillis())
                 .setSmallIcon(R.mipmap.ic_launcher)
-            //    .setStyle(new NotificationCompat.DecoratedCustomViewStyle())
+            //·                                                                                          .setStyle(new NotificationCompat.DecoratedCustomViewStyle())
                 .setCustomContentView(cusRemoveView)
                 .setCustomBigContentView(cusRemoveExpandView);
 
