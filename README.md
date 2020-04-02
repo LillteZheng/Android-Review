@@ -31,6 +31,7 @@
 [Android Socket通信(四) -- UDP与TCP结合传输数据](https://blog.csdn.net/u011418943/article/details/93523767)
 
 第四章，则是一个案例了，假如一个场景，你需要通过 udp 广播对象的 IP 和 端口，再用 tcp 进行数据传输，笔者就是用它做了一个 Android 与 Android 局域网内的简单协同白板，效果还不错。
+
 [Android Socket通信(五) -- 实现一个多人聊天室](https://blog.csdn.net/u011418943/article/details/93881970)
 
 相当于一个总结，一个简单的聊天室。
