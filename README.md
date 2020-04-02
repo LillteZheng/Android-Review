@@ -3,7 +3,14 @@
 # Android 基础
 该系列需要基本掌握，且能较为清晰
 
+
 ## Android 四大组件
+
+### 通知栏
+
+[Android 消息通知栏用法详解(一)](https://blog.csdn.net/u011418943/article/details/105133041)
+
+[Android 消息通知栏用法详解(二) 适配8.0](https://blog.csdn.net/u011418943/article/details/105161112)
 
 ## 网络
 
