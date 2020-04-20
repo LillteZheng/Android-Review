@@ -37,8 +37,8 @@
 相当于一个总结，一个简单的聊天室。
 
 ### NIO 系列文章
-[Android NIO 系列教程(一)  NIO概述](https://blog.csdn.net/u011418943/article/details/94381120)
-
+ [Android NIO 系列教程(一)  NIO概述](https://blog.csdn.net/u011418943/article/details/94381120)
+ 
 [Android NIO 系列教程(二)  -- Channel](https://blog.csdn.net/u011418943/article/details/94385590)
 
 [Android NIO 系列教程(三) -- Buffer](https://blog.csdn.net/u011418943/article/details/94393512)
@@ -51,6 +51,6 @@
 
 [Android NIO 系列教程(七) -- ServerSocketChannel](https://blog.csdn.net/u011418943/article/details/94443778)
 
-[Android NIO 系列教程(七) -- ServerSocketChannel](https://blog.csdn.net/u011418943/article/details/94443778)
+[Android NIO 系列教程(八) --NIO简易聊天室](https://blog.csdn.net/u011418943/article/details/94460361)
 
 
